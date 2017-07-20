@@ -9,8 +9,9 @@
 # production
 /build
 
-# Configuration
+#Personal files
 config.js
+notes.js
 
 # misc
 .DS_Store
