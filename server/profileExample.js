@@ -1,0 +1,135 @@
+Google Profile {
+  provider: 'google-oauth2',
+  displayName: 'Nathan Robinson',
+  id: 'google-oauth2|112749167980736655019',
+  name: { familyName: 'Robinson', givenName: 'Nathan' },
+  emails: [ { value: 'robinsonnathan1289@gmail.com' } ],
+  picture: 'https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg',
+  locale: 'en',
+  nickname: 'robinsonnathan1289',
+  gender: 'male',
+  identities:
+   [ { provider: 'google-oauth2',
+       user_id: '112749167980736655019',
+       connection: 'google-oauth2',
+       isSocial: true } ],
+  _json:
+   { email: 'robinsonnathan1289@gmail.com',
+     email_verified: true,
+     name: 'Nathan Robinson',
+     given_name: 'Nathan',
+     family_name: 'Robinson',
+     picture: 'https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg',
+     gender: 'male',
+     locale: 'en',
+     clientID: 'aPW2iNKVyGpDqE6hBdviSYJjozcaLTri',
+     updated_at: '2017-07-20T18:06:15.074Z',
+     user_id: 'google-oauth2|112749167980736655019',
+     nickname: 'robinsonnathan1289',
+     identities: [ [Object] ],
+     created_at: '2017-07-07T18:50:41.019Z',
+     sub: 'google-oauth2|112749167980736655019' },
+  _raw: '{"email":"robinsonnathan1289@gmail.com","email_verified":true,"name":"Nathan Robinson","given_name":"Nathan","family_name":"Robinson","picture":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg","gender":"male","locale":"en","clientID":"aPW2iNKVyGpDqE6hBdviSYJjozcaLTri","updated_at":"2017-07-20T18:06:15.074Z","user_id":"google-oauth2|112749167980736655019","nickname":"robinsonnathan1289","identities":[{"provider":"google-oauth2","user_id":"112749167980736655019","connection":"google-oauth2","isSocial":true}],"created_at":"2017-07-07T18:50:41.019Z","sub":"google-oauth2|112749167980736655019"}' }
+
+
+
+
+
+
+Facebook Profile {
+  provider: 'facebook',
+  displayName: 'Nathan Robinson',
+  id: 'facebook|10211745748033134',
+  name: { familyName: 'Robinson', givenName: 'Nathan' },
+  picture: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/1544314_10206947708805152_427631150107701149_n.jpg?oh=f184d7c282451caa0f65d724e0a3885f&oe=59FE329D',
+  locale: 'en_US',
+  nickname: 'Nathan Robinson',
+  gender: 'male',
+  identities:
+   [ { provider: 'facebook',
+       user_id: '10211745748033134',
+       connection: 'facebook',
+       isSocial: true } ],
+  _json:
+   { name: 'Nathan Robinson',
+     given_name: 'Nathan',
+     family_name: 'Robinson',
+     gender: 'male',
+     picture: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/1544314_10206947708805152_427631150107701149_n.jpg?oh=f184d7c282451caa0f65d724e0a3885f&oe=59FE329D',
+     picture_large: 'https://scontent.xx.fbcdn.net/v/t1.0-1/1544314_10206947708805152_427631150107701149_n.jpg?oh=29c4a7590dfb63925553549deef04e97&oe=59F342A7',
+     age_range: { min: 21 },
+     context:
+      { mutual_likes: [Object],
+        id: 'dXNlcl9jb250ZAXh0OgGQNBaSlSfPouFEETQ6YP8eQ9VMrKJpnIPuP8XyZC9c107psCFkrpyjcZANZCV0QIdLVk9ZBpVxLu1y7ZANmiH6RziekBu4IXAnXcSZAYdVVa1l2ZB5vEZD' },
+     cover:
+      { id: '10209237671452787',
+        offset_x: 0,
+        offset_y: 50,
+        source: 'https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/14671212_10209237671452787_479801213422640874_n.jpg?oh=2a6109118fb3c89ccb33ddcd2d2f53dd&oe=5A042764' },
+     devices: [ [Object] ],
+     updated_time: '2017-06-16T20:20:13+0000',
+     installed: true,
+     is_verified: false,
+     link: 'https://www.facebook.com/app_scoped_user_id/10211745748033134/',
+     locale: 'en_US',
+     name_format: '{first} {last}',
+     timezone: -6,
+     third_party_id: 'FQttR6_zvRTz_VGaK0M8M4PC_Yo',
+     verified: true,
+     email_verified: true,
+     clientID: 'aPW2iNKVyGpDqE6hBdviSYJjozcaLTri',
+     updated_at: '2017-07-20T18:20:40.215Z',
+     user_id: 'facebook|10211745748033134',
+     nickname: 'Nathan Robinson',
+     identities: [ [Object] ],
+     created_at: '2017-07-20T18:20:40.215Z',
+     sub: 'facebook|10211745748033134' },
+  _raw: '{"name":"Nathan Robinson","given_name":"Nathan","family_name":"Robinson","gender":"male","picture":"https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/1544314_10206947708805152_427631150107701149_n.jpg?oh=f184d7c282451caa0f65d724e0a3885f&oe=59FE329D","picture_large":"https://scontent.xx.fbcdn.net/v/t1.0-1/1544314_10206947708805152_427631150107701149_n.jpg?oh=29c4a7590dfb63925553549deef04e97&oe=59F342A7","age_range":{"min":21},"context":{"mutual_likes":{"data":[],"summary":{"total_count":100}},"id":"dXNlcl9jb250ZAXh0OgGQNBaSlSfPouFEETQ6YP8eQ9VMrKJpnIPuP8XyZC9c107psCFkrpyjcZANZCV0QIdLVk9ZBpVxLu1y7ZANmiH6RziekBu4IXAnXcSZAYdVVa1l2ZB5vEZD"},"cover":{"id":"10209237671452787","offset_x":0,"offset_y":50,"source":"https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/14671212_10209237671452787_479801213422640874_n.jpg?oh=2a6109118fb3c89ccb33ddcd2d2f53dd&oe=5A042764"},"devices":[{"os":"Android"}],"updated_time":"2017-06-16T20:20:13+0000","installed":true,"is_verified":false,"link":"https://www.facebook.com/app_scoped_user_id/10211745748033134/","locale":"en_US","name_format":"{first} {last}","timezone":-6,"third_party_id":"FQttR6_zvRTz_VGaK0M8M4PC_Yo","verified":true,"email_verified":true,"clientID":"aPW2iNKVyGpDqE6hBdviSYJjozcaLTri","updated_at":"2017-07-20T18:20:40.215Z","user_id":"facebook|10211745748033134","nickname":"Nathan Robinson","identities":[{"provider":"facebook","user_id":"10211745748033134","connection":"facebook","isSocial":true}],"created_at":"2017-07-20T18:20:40.215Z","sub":"facebook|10211745748033134"}' }
+
+
+
+
+
+
+  GitHub Profile {
+  provider: 'github',
+  displayName: '',
+  id: 'github|29050411',
+  name: { familyName: undefined, givenName: undefined },
+  picture: 'https://avatars3.githubusercontent.com/u/29050411?v=4',
+  nickname: 'robinsonnathan',
+  identities:
+   [ { provider: 'github',
+       user_id: 29050411,
+       connection: 'github',
+       isSocial: true } ],
+  _json:
+   { picture: 'https://avatars3.githubusercontent.com/u/29050411?v=4',
+     nickname: 'robinsonnathan',
+     gravatar_id: '',
+     url: 'https://api.github.com/users/robinsonnathan',
+     html_url: 'https://github.com/robinsonnathan',
+     followers_url: 'https://api.github.com/users/robinsonnathan/followers',
+     following_url: 'https://api.github.com/users/robinsonnathan/following{/other_user}',
+     gists_url: 'https://api.github.com/users/robinsonnathan/gists{/gist_id}',
+     starred_url: 'https://api.github.com/users/robinsonnathan/starred{/owner}{/repo}',
+     subscriptions_url: 'https://api.github.com/users/robinsonnathan/subscriptions',
+     organizations_url: 'https://api.github.com/users/robinsonnathan/orgs',
+     repos_url: 'https://api.github.com/users/robinsonnathan/repos',
+     events_url: 'https://api.github.com/users/robinsonnathan/events{/privacy}',
+     received_events_url: 'https://api.github.com/users/robinsonnathan/received_events',
+     type: 'User',
+     site_admin: false,
+     blog: '',
+     public_repos: 48,
+     public_gists: 0,
+     followers: 0,
+     following: 0,
+     updated_at: '2017-07-20T18:21:48.118Z',
+     clientID: 'aPW2iNKVyGpDqE6hBdviSYJjozcaLTri',
+     name: '',
+     user_id: 'github|29050411',
+     identities: [ [Object] ],
+     created_at: '2017-07-20T18:21:48.118Z',
+     sub: 'github|29050411' },
+  _raw: '{"picture":"https://avatars3.githubusercontent.com/u/29050411?v=4","nickname":"robinsonnathan","gravatar_id":"","url":"https://api.github.com/users/robinsonnathan","html_url":"https://github.com/robinsonnathan","followers_url":"https://api.github.com/users/robinsonnathan/followers","following_url":"https://api.github.com/users/robinsonnathan/following{/other_user}","gists_url":"https://api.github.com/users/robinsonnathan/gists{/gist_id}","starred_url":"https://api.github.com/users/robinsonnathan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/robinsonnathan/subscriptions","organizations_url":"https://api.github.com/users/robinsonnathan/orgs","repos_url":"https://api.github.com/users/robinsonnathan/repos","events_url":"https://api.github.com/users/robinsonnathan/events{/privacy}","received_events_url":"https://api.github.com/users/robinsonnathan/received_events","type":"User","site_admin":false,"blog":"","public_repos":48,"public_gists":0,"followers":0,"following":0,"updated_at":"2017-07-20T18:21:48.118Z","clientID":"aPW2iNKVyGpDqE6hBdviSYJjozcaLTri","name":"","user_id":"github|29050411","identities":[{"provider":"github","user_id":29050411,"connection":"github","isSocial":true}],"created_at":"2017-07-20T18:21:48.118Z","sub":"github|29050411"}' }

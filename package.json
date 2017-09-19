@@ -3,10 +3,12 @@
   "main": "server/server.js",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3005",
+  "homepage": "http://dev.clawbuntu.com:3000",
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "emailjs-com": "^1.5.14",
     "express": "^4.15.3",
     "express-session": "^1.15.4",
     "massive": "^3.0.0",
@@ -14,7 +16,9 @@
     "passport-auth0": "^0.6.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-recaptcha": "^2.3.5",
     "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
     "redux": "^3.7.2",
     "redux-promise-middleware": "^4.3.0"
   },

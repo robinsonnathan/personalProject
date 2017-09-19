@@ -2,50 +2,55 @@
 const express = require('express'),
       session = require('express-session'),
       bodyParser = require('body-parser'),
-      massive = require('massive'),
       passport = require('passport'),
       Auth0Strategy = require('passport-auth0'),
+      emailjs = require('emailjs-com')
+      cors = require('cors'),
       config = require('./config.js');
 
 
-//Start express on 'app'
-const app = express();
 
+//Start express on 'app'
+const app = module.exports = express();
+
+//App Middleware
 app.use(bodyParser.json());
+app.use(cors());
 app.use(session({
   secret: config.sessionSecret,
   resave: false,
   saveUninitialized: false
 }));
 
-console.log(config.auth0.domain)
-console.log(config.auth0.clientID)
-console.log(config.auth0.clientSecret)
-console.log(config.auth0.callbackURL)
 
-//Init passport
-app.use(passport.initialize());
-//Passport hijacks session
-app.use(passport.session());
+
+//Initialization
+//Passport integrates with session
+  app.use(passport.initialize());
+  app.use(passport.session());
+//emailjs
+  emailjs.init(config.emailjs.userid)
+//Serve static Files
+  app.use(express.static(__dirname+'/../build'))
 
 passport.use(new Auth0Strategy({
   domain:       config.auth0.domain,
   clientID:     config.auth0.clientID,
   clientSecret: config.auth0.clientSecret,
-  callbackURL: 'http://localhost:3000/auth/callback'
+  callbackURL: 'http://dev.clawbuntu.com:3005/auth/callback'
 
 },
   function(accessToken, refreshToken, extraParams, profile, done){
-  console.log("logged in: ", profile.displayName);
-  done(null, {id: 3, username: "joe", email: "joe@blow.joeblow" });
+  return done(null, profile);
   }
 ));
 
-//User stuffs
+//Throw user data on session
 passport.serializeUser(function(user, done) {
   done(null, user);
 })
 
+//Swap out user data cookie for ID, store user data in memory instead
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
@@ -54,17 +59,47 @@ passport.deserializeUser(function(obj, done) {
 //Let's make some endpoints
 
 app.get('/', (req, res) => {
-  res.send("hello, welcome to a login")
+  res.send("hello, welcome to clawbuntu!")
 })
 
+
+// Authentication
 app.get('/auth', passport.authenticate('auth0'));
 
-app.get('/auth/callback', passport.authenticate('auth0', {successRedirect: '/loginsuccess'} )
+app.get('/auth/callback', passport.authenticate('auth0', {successRedirect: 'http://dev.clawbuntu.com:3005'} )
 );
 
 app.get('/loginsuccess', (req, res) => {
   res.send("Successfully Logged In!");
 })
+
+//Where we can find our users data
+app.get('/auth/me', (req, res) => {
+  res.send(req.user)
+})
+
+//Contact Form
+app.get('/formsubmit', (req, res) => {
+    res.status(200).redirect("/")
+  })
+
+  //Send email
+  emailjs.send(config.emailjs.serviceid, config.emailjs.templateid, {
+    "name": req.query.name,
+    "email": req.query.email,
+    "phone": req.query.phone,
+    "contactMethod": req.query.contactMethod
+  })
+  .then(
+    function(response){
+      console.log("success", response);
+    },
+    function(error){
+      console.log("failed", error);
+    }
+  )
+
+
 
 
 

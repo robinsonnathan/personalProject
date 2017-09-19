@@ -10,8 +10,9 @@
 /build
 
 #Personal files
+server/config.js
 config.js
-notes.js
+
 
 # misc
 .DS_Store
